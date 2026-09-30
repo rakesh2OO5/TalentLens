@@ -1,8 +1,8 @@
-# Jobekaa
+# TalentLens
 
 ### A Smart Platform for Resume Analytics and Accurate Job Recommendation Using Artificial Intelligence
 
-Jobekaa is an AI-powered career assistance platform designed to help job seekers understand their resumes, identify suitable career paths, discover relevant job opportunities, and improve their employability.
+TalentLens is an AI-powered career assistance platform designed to help job seekers understand their resumes, identify suitable career paths, discover relevant job opportunities, and improve their employability.
 
 The platform combines resume parsing, structured resume analysis, AI-powered contextual reasoning, skill-gap identification, job-role matching, and job discovery into a single workflow.
 
@@ -69,7 +69,7 @@ However, keyword overlap alone does not fully capture:
 - Job-description requirements
 - The semantic relationship between a candidate and a job
 
-Jobekaa aims to address these limitations by combining deterministic processing with AI-powered contextual reasoning.
+TalentLens aims to address these limitations by combining deterministic processing with AI-powered contextual reasoning.
 
 The current implementation primarily focuses on the Job Seeker workflow.
 
@@ -226,7 +226,7 @@ This ensures that the frontend receives predictable data structures.
 
 ## 4. Career Role Recommendation
 
-Jobekaa identifies job roles that best align with the candidate's resume.
+TalentLens identifies job roles that best align with the candidate's resume.
 
 For example:
 
@@ -267,7 +267,7 @@ The system attempts to distinguish between skills already demonstrated in the re
 
 ## 6. Resume Improvement Suggestions
 
-Jobekaa can identify areas where the resume itself could be improved.
+TalentLens can identify areas where the resume itself could be improved.
 
 Examples include:
 
@@ -284,7 +284,7 @@ The system avoids recommending that users simply add keywords they do not actual
 
 ## 7. Job Discovery
 
-Jobekaa can retrieve available job opportunities using external job data sources.
+TalentLens can retrieve available job opportunities using external job data sources.
 
 The current implementation uses the Jobicy public jobs API.
 
@@ -326,7 +326,7 @@ The resulting score is used to prioritize opportunities that are more relevant t
 
 ## 9. India-Oriented Job Discovery
 
-Jobekaa is primarily intended for Indian students, freshers, and job seekers.
+TalentLens is primarily intended for Indian students, freshers, and job seekers.
 
 The default job-search context is therefore:
 
@@ -412,9 +412,9 @@ The current Job Seeker workflow is approximately:
 
 # Architecture
 
-Jobekaa follows a separated frontend/backend architecture.
+TalentLens follows a separated frontend/backend architecture.
 
-    Jobekaa
+    TalentLens
     |
     +-- backend
     |     |
@@ -506,7 +506,7 @@ This separation keeps sensitive operations and external API credentials on the b
 
 # APIs and External Services
 
-Jobekaa currently uses the following external services:
+TalentLens currently uses the following external services:
 
 | Service | Purpose | API Key Required |
 |---|---|---|
@@ -580,7 +580,7 @@ The backend should provide a sensible default model if `GEMINI_MODEL` is not spe
 
 # Jobicy API
 
-Jobekaa currently uses Jobicy as one of its job opportunity sources.
+TalentLens currently uses Jobicy as one of its job opportunity sources.
 
 Jobicy provides a public remote-jobs API.
 
@@ -606,7 +606,7 @@ The original job listing URL is used for the application link.
 
 Jobicy is primarily a remote-jobs source and therefore does not provide comprehensive coverage of all Indian job listings.
 
-Because of this limitation, Jobekaa does not claim that Jobicy represents the complete Indian job market.
+Because of this limitation, TalentLens does not claim that Jobicy represents the complete Indian job market.
 
 The application uses geographic filtering and ranking to prioritize India-oriented opportunities where sufficient location or eligibility information is available.
 
@@ -661,7 +661,7 @@ Example:
 
 # Authentication
 
-Jobekaa uses token-based authentication.
+TalentLens uses token-based authentication.
 
 The general authentication flow is:
 
@@ -783,7 +783,7 @@ The objective is to make the recommendation actionable rather than simply tellin
 
     "You are suitable for Full Stack Development."
 
-Instead, Jobekaa aims to help the candidate discover actual opportunities corresponding to that career direction.
+Instead, TalentLens aims to help the candidate discover actual opportunities corresponding to that career direction.
 
 ---
 
@@ -791,7 +791,7 @@ Instead, Jobekaa aims to help the candidate discover actual opportunities corres
 
 The repository is organized into separate frontend and backend applications.
 
-    Jobekaa/
+    TalentLens/
     |
     +-- backend/
     |   |
@@ -902,7 +902,7 @@ All protected external services should be accessed from the backend.
 ## 1. Clone the repository
 
     git clone <repository-url>
-    cd Jobekaa
+    cd TalentLens
 
 ---
 
@@ -1360,7 +1360,7 @@ External job APIs may have:
 - Rate limits
 - Provider-specific restrictions
 
-Therefore, Jobekaa does not claim to represent every available job opportunity.
+Therefore, TalentLens does not claim to represent every available job opportunity.
 
 ---
 
@@ -1378,7 +1378,7 @@ The recruiter workflow is currently pending.
 
 # Development Philosophy
 
-Jobekaa follows a hybrid approach rather than relying entirely on generative AI.
+TalentLens follows a hybrid approach rather than relying entirely on generative AI.
 
 The system combines:
 
@@ -1523,7 +1523,7 @@ This separation makes the system easier to debug, maintain, and extend.
 
 # Team
 
-Jobekaa is being developed as a final-year major project by a team of four students.
+TalentLens is being developed as a final-year major project by a team of four students.
 
 The project combines concepts from:
 
@@ -1565,7 +1565,7 @@ If the project is later released publicly as an open-source project, an appropri
 
 # Acknowledgements
 
-Jobekaa makes use of several technologies and services that enable the current prototype:
+TalentLens makes use of several technologies and services that enable the current prototype:
 
 - React and Vite for the frontend
 - Node.js and Express for the backend
